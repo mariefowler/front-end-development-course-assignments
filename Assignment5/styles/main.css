@@ -1,12 +1,14 @@
 body {background-color:#e9e9e9;
       font-family:Helvetica, Arial, sans-serif;
+	  margin-left:auto;
+	  margin-right:auto;
 }
 
 .main-content {background-color:#fff;
                margin-top:20px;
 			   margin-bottom:20px;
-			   margin-left:200px;
-			   margin-right:30px;
+			   margin-left:auto;
+			   margin-right:auto;
 			   width:960px;
 }
 
@@ -18,3 +20,58 @@ body {background-color:#e9e9e9;
 			font-weight:bold;
 			margin-top:20px; 
 			}
+			
+
+.navigation { /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#1e5799+0,7db9e8+99 */
+background: rgb(30,87,153); /* Old browsers */
+background: -moz-linear-gradient(top,  rgba(30,87,153,1) 0%, rgba(125,185,232,1) 99%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top,  rgba(30,87,153,1) 0%,rgba(125,185,232,1) 99%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom,  rgba(30,87,153,1) 0%,rgba(125,185,232,1) 99%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1e5799', endColorstr='#7db9e8',GradientType=0 ); /* IE6-9 */
+              padding:10px;
+ }
+ 
+ .navigation a { color:#ffffff;
+              font-size:22px;
+			  font-weight:bold;
+			  margin-top:0px;
+			  margin-bottom:0px;
+			  margin-right:10px;
+			  margin-left:10px;
+}
+
+ .hero { background:url(../images/hero.jpg); width:100%; height:300px;
+   }
+ 
+ .services { margin-top:10px; 
+ }
+ 
+ .service { float:left;
+            padding:20px;
+			width:280px;
+ }
+ 
+ .service .service-image { background-color:#7bd9e8;
+ 						  border-radius:50%;
+						  width:200px;
+						  height:200px;
+						  text-align:center;
+						  margin-left:auto;
+						  margin-right:auto;
+}
+
+.service .service-image img { margin-top:30px;
+ }
+ 
+ .service h2 { text-align:center;
+  }
+
+.clear {clear:both;
+}
+
+
+
+
+
+
+
