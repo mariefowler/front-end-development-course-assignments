@@ -1,10 +1,10 @@
 Using the Chrome or Safari Dev tools open up the webpage http://training.uark.edu/it-readiness/ and answer the following questions.
 
 1. What font family is being used for the paragraph below 'About IT Readiness'?
-Answer:
+Answer:sans serif
 
 2. What heading tag (h1,h2,h3,h4,h5,h6) is being used for 'About IT Readiness'?
-Answer:
+Answer:h2
 
 3. What is the bottom margin value for 'About IT Readiness'?
 Answer:
