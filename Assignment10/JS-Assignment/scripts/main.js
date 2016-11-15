@@ -5,8 +5,10 @@ function update() {
     ///Part 1
     var firstName = getValue('firstName');
     var lastName = getValue('lastName');
+    var fullName = getValue('fullName');
     console.log(firstName);
     console.log(lastName);
+    console.log(fullName);
 
 
 
