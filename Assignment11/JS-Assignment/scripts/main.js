@@ -14,15 +14,31 @@ function update() {
     if (emailAddress == "") {
         messages.push("email address is required");
     }
-    var endMessage = "Form is Complete";
-    for (var i = 0; i < messages.length; i++) {
-        console.log(messages[i]);
-        endMessages = endMessage + messages[i]+"<br>"
-    }
-    document.getElementById ("error-list")
-}
 
-////
+    var errElm = getElm('error-list');
+
+    var html = '';
+    for (var i = 0; i < messages.length; i++) {
+        html += messages[i] + '<br/>';
+    }
+        getElm.innerHTML = html;
+
+        
+    
+    var user = {
+        firstname: firstName,
+        lastname: lastName,
+        emailaddress: emailAddress
+
+    }
+
+    user.fullname = function () {
+        return this  firstName + ' ' + lastName;
+
+    }
+    
+
+
 var btn = document.getElementById('btnUpdate');
 btn.addEventListener('click', update);
 
@@ -33,6 +49,7 @@ function getValue(id) {
 function getElm(id) {
     return document.getElementById(id);
 }
+
 
 function myFunction() {
     alert("Submitted");

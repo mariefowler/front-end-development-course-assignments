@@ -1,19 +1,28 @@
 
+var btn = getE('btnSubmit');
+btn.addEventListener('click,' submit);
 
-var submit = function() {var messages = [];
 
-    var reset = function()
+//var btnR = getE('Reset');
+//btnR.addEventListener("click", reset);
 
-        var btnSumit= getElm('btnSubmit');
+///function submitfunc(){
+ //  alert(this.id+ " : you clicked Submit")
+//};
 
-        var email = getElm('email');
-    if (email.value.indexOf('@')> -1)  {}
+//function reset(){
+//    alert('you clicked Reset')
 
-function getElm(id){
-    return document.getElementbyID('btnSumit').addEventListener(click, function () {
-    alert('you clicked btnSumit')
-});
-    document.getElementById('btnReset').addEventListener(click, function () {
-        alert('you clicked btnReset')
-    });
+//};
 
+
+
+   // document.getElementbyID('Submit').addEventListener("click", btnSubFunc () 
+//});
+   // document.getElementById('Reset').addEventListener("click", btnResFunc () {
+    //    alert('you clicked Reset')
+ //   });
+
+    //function btnSubFunc () {
+      //  alert (this.id + " : you clicked Submit");
+ //   }
