@@ -1,19 +1,31 @@
 
+var btn = getE('btnSubmit');
+btn.addEventListener('click,' submit );
 
-var submit = function() {var messages = [];
+function myFunction() {
+    alert("You clicked Submit");
 
-    var reset = function()
 
-        var btnSumit= getElm('btnSubmit');
+//var btnR = getE('Reset');
+//btnR.addEventListener("click", reset);
 
-        var email = getElm('email');
-    if (email.value.indexOf('@')> -1)  {}
+///function submitfunc(){
+ //  alert(this.id+ " : you clicked Submit")
+//};
 
-function getElm(id){
-    return document.getElementbyID('btnSumit').addEventListener(click, function () {
-    alert('you clicked btnSumit')
-});
-    document.getElementById('btnReset').addEventListener(click, function () {
-        alert('you clicked btnReset')
-    });
+//function reset(){
+//    alert('you clicked Reset')
 
+//};
+
+
+
+   // document.getElementbyID('Submit').addEventListener("click", btnSubFunc () 
+//});
+   // document.getElementById('Reset').addEventListener("click", btnResFunc () {
+    //    alert('you clicked Reset')
+ //   });
+
+    //function btnSubFunc () {
+      //  alert (this.id + " : you clicked Submit");
+ //   }
