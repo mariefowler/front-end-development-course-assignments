@@ -1,4 +1,9 @@
 body{
     width:600px;
     margin:20px auto;
+    background-color:#9f9c9c;
+}
+.bonus {
+    height: 100px;
+    width: 400px;
 }
