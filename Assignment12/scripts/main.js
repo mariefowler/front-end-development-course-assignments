@@ -1,7 +1,5 @@
 
 var btn = getE('btnSubmit');
-btn.addEventListener('click,' submit);
-
 
 //var btnR = getE('Reset');
 //btnR.addEventListener("click", reset);
@@ -14,6 +12,12 @@ btn.addEventListener('click,' submit);
 //    alert('you clicked Reset')
 
 //};
+
+btn.addEventListener('click,' submit );
+
+function myFunction() {
+    alert("You clicked Submit");
+
 
 
 
