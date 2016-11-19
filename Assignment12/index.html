@@ -10,11 +10,12 @@
        <section id="message">
 
         </section>
-        <section class="form">
+        <section class="form-elements">
             <div class="inputs">
-            <label for=" firstNam">First Name</label>
+               
+            <label for="firstNam">First Name</label>
                 <br />
-           <input type="text" id="firstNam" name="firstNam" placeholder="First Name" />
+           <input type="text" id="firstNam" name="firstNam" placeholder="First Name"/>
             </div>
 
             <div class="inputs">
@@ -26,7 +27,7 @@
             <div class="inputs">
             <label for="eMail">Email</label>
                 <br />
-           <input type="text" id="eMail" name="eMail" placeholder="Email"/>
+           <input type="text" id="email" name="email" placeholder="Email"/>
             </div>
 
             <div class="inputs">
@@ -36,20 +37,22 @@
               </div>
 
             <div class="inputs">
-            <label for="conPassWd">Confirm Password</label>
+            <label for="confirmPass">Confirm Password</label>
                 <br />
-            <input type="text" id="conPassWd" name="conPassWd" placeholder="Confirm Password"/>
+            <input type="text" id="confirmPass" name="confirmPass" placeholder="Confirm Password"/>
              </div>
        </section>
        <section class="control-panel">
-             
-                <button id="btnSubmit">Submit</button>
-                <button id="btnReset">Reset</button>
+                  
+             	<input type="button" id="btnSubmit" value="Submit" onClick="update()">
+                <input type="button" id="btnReset" value="Reset" onClick="reset()">
+               
+                 
            
 
           </section>
         
-        <script src="scripts/main.js"></script>
+        <script src="scripts/main2.js"></script>
         
     </body>
 
