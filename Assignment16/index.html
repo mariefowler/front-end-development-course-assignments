@@ -23,15 +23,40 @@
                 <li>Any hyperlink with a <strong>href</strong> that <strong>ends with <em>.edu</em></strong></li>
                 <li>Any hyperlink with a <strong>href</strong> that <strong>contains <em>mart</em></strong></li>
             </ol>
+            
             <style>
                 .part-1 a[target] {
                     color: blue;
                 }
+
+                .part-1 input[type="text"] {
+                    background-color:pink;
+                }
+
+                    
+                
+
+                .part-1 [href*="https"]{
+                    color:red;
+                }
+
+                .part-1 [href*=".edu"]{
+                    font-weight:bold;
+                }
+
+                .part-1 a[href*="mart"]{
+                    color:pink;
+                }
+
+                
+
             </style>
             <section class="part-1">
                 <a href="" target="_blank">I have a target</a>
                 <input type="text" value="My background should be pink" />
                 <input type="checkbox" />
+               
+
                 <a href="https://google.com">Google</a>
                 <a href="http://uark.edu">Uark.Edu</a>
                 <a href="https://walmart.com">Walmart</a>
