@@ -7,7 +7,7 @@ body {
     margin:20px auto;
     font-size:20px;
 }
-.errors{
+.error {
     color:#ff0000;
     display:none;
 }
@@ -28,6 +28,10 @@ body {
     font-size:20px;
     padding:10px;
 }
+
+.input-group span {
+    color:#ff0000;
+}
 .control-panel{
     text-align:center;
 }
@@ -37,6 +41,7 @@ body {
 
 .successmsg{
     display:none;
+    
 }
 .invalid::-webkit-input-placeholder { /* Chrome/Opera/Safari */
   color: #ff0000;

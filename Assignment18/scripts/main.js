@@ -1,5 +1,5 @@
 $(document).ready(function () {
-    $('input').on('blur', function () {
+    $('input', 'textarea').on('blur', function () {
         var input = $(this);
         validateRequiredInput(input)
 
@@ -11,6 +11,8 @@ $(document).ready(function () {
             validatePassword();
         }
     });
+
+   
 
     $('#btnSubmit').on('click', function () {
         validateAllInputs();
@@ -58,12 +60,12 @@ function validateEmail(email) {
 
     //Only validate if it is filled out
     if (emailValue !== '') {
-        if (emailValue.indexOf('@') === -1 && emailValue.indexOf('@') === -1) {
+        if (emailValue.indexOf('@') === -1 || emailValue.indexOf('.com') === -1) {
             emailErrorMsg.fadeOut();
-            email.removeClass('invald');
+            email.removeClass('invalid');
         } else {
             emailErrorMsg.fadeIn();
-            email.addClass('invald');
+            email.addClass('invalid');
         }
     }
 
@@ -79,7 +81,7 @@ function validatePassword() {
     var passwordConfirmValue = passwordConfirm.val();
 
     //Only validate if both are filled out
-    // if (passwordValue !== '' && passwordConfirmValue !== '') {
+    if (passwordValue !== '' && passwordConfirmValue !== '') {
 
     var passwordErrorMsg = password.closest('.input-group').find('.matchingMsg');
 
@@ -95,7 +97,7 @@ function validatePassword() {
 
     }
 
-    //}
+    }
 }
 
 
@@ -108,7 +110,7 @@ function validateAllInputs() {
     for (var i = 0; i < allInputs.length; i++) {
         var currentInput = allInputs.eq(i);
         
-        validateInput(currentInput);
+        validateRequiredInput(currentInput);
 
         if (input.data('isemail') === true) {
             validateEmail();
@@ -123,8 +125,8 @@ function validateAllInputs() {
     if (invalidInputCount > 0) {
         $('#messages').html('Form is Invalid');
     } else {
-        $('.form-element').fadeOut('slow', function () {
-            $('.successmsg').fadeIn();
+        $('.form-elements').fadeOut('slow', function () {
+            $('#successmsg').fadeIn();
         });
     }
 
